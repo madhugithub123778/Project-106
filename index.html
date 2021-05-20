@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Hand Gesture Recogniser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h1 class="btn btn-success heading">Hand Gesture Identifier
+<br>
+
+<span>&#128400;</span>
+<span>&#128076;</span>
+<span>&#128077;</span>
+
+</h1>
+      <br><br><br>
+
+      <p style="font-size: 22px;color:black;font-family: Cochin">Take an image and find out your hand gesture!
+      	<br><br>
+        <b style="color:rebeccapurple; background-color: white;padding: 5px;border: 2px dotted rebeccapurple;border-radius: 10px;">Is it a High Five?</b>
+        <span>&#128400;</span>
+        <br><br>
+        <b style="color: orange;background-color: white;padding: 5px;border: 2px dashed orange;border-radius: 10px; ">Is it Superb?</b>
+        <span>&#128076;</span>
+        <br><br>
+        <b style="color: navy; background-color: white;padding: 5px;border: 2px solid navy;border-radius: 10px;">Is it a Thumbs Up?</b>
+        <span>&#128077;</span>
+        <br>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Webcam View: </label>
+<div id="camera"></div>
+<br>
+<button class="btn btn-info"onclick="snap()">Capture Picture</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Prediction 1: </label>
+<p id="gesture_1"></p>
+<p id="emoji_1"></p>
+
+<label>Prediction 2: </label>
+<p id="gesture_1"></p>
+<p id="emoji_2"></p>
+</div>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+<div id="result"></div>
+<br>
+<button class="btn btn-primary"onclick="check()">Predict Hand Gesture</button>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

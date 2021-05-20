@@ -1,0 +1,29 @@
+body
+{
+  color: white;
+  background-image: linear-gradient(turquoise, lightyellow );
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dotted black;
+  width: 350px;
+  height: 300px; 
+}
+#gesture_1,#gesture_2
+{
+  color: black;font-size: 22px;
+}
+
+label{
+color:black;font-size: 20px;font-family: Trebuchet MS; 
+}
+
+.heading{
+width: 100%;box-shadow: 15px 15px 20px navy;font-size: 25px;font-family: monospace;
+
+
+}
